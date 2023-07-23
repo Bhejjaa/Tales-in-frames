@@ -1,8 +1,46 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
 <head>
-  <title>Photo Gallery</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            overflow-x:hidden;
+        }
+
+        .card {
+          border-radius: 20px;
+      }
+      .card .btn-primary {
+          background-color: black;
+          color: white;
+      }
+      .card-title{
+          color: black;
+      }
+      .card-text{
+          color: black;
+      }
+      .card-img-top {
+          object-fit: cover;
+          height: 200px;
+          border-radius: 20px 20px 0 0;
+      }
+      .hr-custom {
+          border-radius: 0;
+          height: 1px;
+          background-color: gray;
+      }
+    </style>
+
+    <title>Tales in frames - Homepage</title>
+
 </head>
 
 <body>
@@ -12,19 +50,39 @@
 <div class="container my-5">
 
   <h1 class="text-center">Photo Gallery</h1>
-  
+  <br>
+  <br>
+  <br>
   <div class="row">
-  
-    <div class="col-md-4" th:each="photo : ${photos}">
-      <div class="thumbnail">
-        <img th:src="@{${photo.url}}" alt="Image" class="img-fluid">
-        <div class="caption">
-          <h3 th:text="${photo.title}">Photo Title</h3>
+    <div class="col-md-4">
+        <div class="card mb-4">
+            <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg" class="card-img-top" alt="Article 1">
+            <div class="card-body">
+                <h5 class="card-title">Enchanting Serenity: Majestic Tree in the Golden Hour</h5>
+                <p class="card-text">A captivating photograph of a majestic tree standing tall in the enchanting golden hour, emanating serenity and tranquility.</p>
+            </div>
         </div>
-      </div>
     </div>
+    <div class="col-md-4">
+        <div class="card mb-4">
+            <img src="https://iso.500px.com/wp-content/uploads/2016/03/stock-photo-142984111.jpg" class="card-img-top" alt="Article 2">
+            <div class="card-body">
+                <h5 class="card-title">Graceful Wanderer: Majestic Deer Amidst the Sunset Hills</h5>
+                <p class="card-text">An awe-inspiring sight of a majestic deer gracefully walking walking amidst sunset-kissed hills, embodying natural serenity.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card mb-4">
+            <img src="https://th-thumbnailer.cdn-si-edu.com/XJFrDNlNhvtv1uH-U6FKdBJ_U2U=/1000x750/filters:no_upscale()/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer/04/8e/048ed839-a581-48af-a0ae-fac6fec00948/gettyimages-168346757_web.jpg" class="card-img-top" alt="Article 3">
+            <div class="card-body">
+                <h5 class="card-title">Enchanting Forest Serenity: Flowing River Amidst Verdant Beauty</h5>
+                <p class="card-text">Enchanting river winds through lush forest, capturing nature's tranquil beauty..</p>
+            </div>
+        </div>
+    </div>
+</div>
 
-  </div>
 
 </div>
 
