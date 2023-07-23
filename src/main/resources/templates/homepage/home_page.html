@@ -14,10 +14,10 @@
             overflow-x:hidden;
         }
         .display-1 {
-            color: #660708;
-            font-family: "Orelega One", sans-serif;
-            font-weight: 500;
-            font-size: 200px;
+            color: #E30B5D;
+            font-family: "Orelega One", ubuntu;
+            font-weight: 200;
+            font-size: 100px;
         }
         .lead {
             font-family: "Space Grotesk", sans-serif;
@@ -25,22 +25,14 @@
         .carousel-inner {
             border-radius: 20px;
         }
-        .card {
-            border-radius: 20px;
-        }
+
         .card .btn-primary {
             background-color: black;
             color: white;
         }
-        .card-title{
-            color: black;
-        }
-        .card-text{
-            color: black;
-        }
-        .card-img-top {
+        .card-img {
             object-fit: cover;
-            height: 200px;
+            height: 350px;
             border-radius: 20px 20px 0 0;
         }
         .hr-custom {
@@ -49,7 +41,7 @@
             background-color: gray;
         }
     </style>
-    <title>Bugle - Homepage</title>
+    <title>Tales in frames - Homepage</title>
 </head>
 <body>
 <div th:replace="layout/header :: header"></div>
@@ -57,10 +49,10 @@
 <div class="container">
     <div class="row">
         <div class="col-md-6">
-            <h1 class="display-1">Bugle</h1>
+            <h1 class="display-1">Tales in frames</h1>
         </div>
         <div class="col-md-6">
-            <p  style="margin: 90px 80px" class="lead">Fuel yourself with the latest and greatest <br> articles. Dive into a world of rich outlooks,<br> unbeatable ideas, and captivating stories.</p>
+            <p  style="margin: 90px 80px" class="lead">Discover a captivating visual journey through mesmerizing photographs. Explore artistry and emotion through our stunning photography gallery.</p>
         </div>
     </div>
     <hr class="hr-custom">
@@ -75,22 +67,22 @@
         </ol>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="https://images.pexels.com/photos/2310646/pexels-photo-2310646.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Image 1">
+                <img src="https://iso.500px.com/wp-content/uploads/2016/03/stock-photo-142984111.jpg" alt="Image 1">
             </div>
             <div class="carousel-item">
-                <img src="https://images.pexels.com/photos/2310646/pexels-photo-2310646.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Image 2">
+                <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg" alt="Image 2">
             </div>
             <div class="carousel-item">
-                <img src="https://images.pexels.com/photos/2310646/pexels-photo-2310646.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Image 3">
+                <img src="https://webneel.com/wallpaper/sites/default/files/images/08-2018/3-nature-wallpaper-mountain.jpg" alt="Image 3">
             </div>
             <div class="carousel-item">
-                <img src="https://images.pexels.com/photos/2310646/pexels-photo-2310646.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Image 4">
+                <img src="https://hips.hearstapps.com/hmg-prod/images/nature-quotes-landscape-1648265299.jpg" alt="Image 4">
             </div>
             <div class="carousel-item">
-                <img src="https://images.pexels.com/photos/2310646/pexels-photo-2310646.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Image 5">
+                <img src="https://th-thumbnailer.cdn-si-edu.com/XJFrDNlNhvtv1uH-U6FKdBJ_U2U=/1000x750/filters:no_upscale()/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer/04/8e/048ed839-a581-48af-a0ae-fac6fec00948/gettyimages-168346757_web.jpg" alt="Image 5">
             </div>
             <div class="carousel-item">
-                <img src="https://images.pexels.com/photos/2310646/pexels-photo-2310646.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Image 6">
+                <img src="https://cdn.unenvironment.org/2022-12/Mangroves_credit_UNEP__Duncan_Moore.jpg" alt="Image 6">
             </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -102,10 +94,13 @@
             <span class="sr-only">Next</span>
         </a>
     </div>
-
+<br>
+<br>
+<br>
+<br>
     <div class="row mt-4">
         <div class="col-12">
-            <h2 class="mb-3">Top Article Today</h2>
+            <h2 class="mb-3">My Gallery</h2>
             <a th:href="@{/th-blogs/getAll}" href="#" class="btn btn-secondary float-right" >See More</a>
         </div>
 
@@ -115,50 +110,31 @@
     <div class="row">
         <div class="col-md-4">
             <div class="card mb-4">
-                <img src="https://images.pexels.com/photos/1236701/pexels-photo-1236701.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top" alt="Article 1">
-                <div class="card-body">
-                    <h5 class="card-title">Article 1</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque semper condimentum ligula, ut consequat neque.</p>
-                    <a href="#" class="btn btn-primary">Read More</a>
-                </div>
+                <img src="https://iso.500px.com/wp-content/uploads/2015/12/top.jpg" class="card-img" alt="Article 1">
             </div>
         </div>
         <div class="col-md-4">
             <div class="card mb-4">
-                <img src="https://images.pexels.com/photos/1236701/pexels-photo-1236701.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top" alt="Article 2">
-                <div class="card-body">
-                    <h5 class="card-title">Article 2</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque semper condimentum ligula, ut consequat neque.</p>
-                    <a href="#" class="btn btn-primary">Read More</a>
-                </div>
+                <img src="https://static1.pocketlintimages.com/wordpress/wp-content/uploads/146898-phones-feature-the-best-apple-iphone-photos-ever-taken-image1-ydter7skel.jpg" class="card-img" alt="Article 2">
             </div>
         </div>
         <div class="col-md-4">
             <div class="card mb-4">
-                <img src="https://images.pexels.com/photos/1236701/pexels-photo-1236701.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top" alt="Article 3">
-                <div class="card-body">
-                    <h5 class="card-title">Article 3</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque semper condimentum ligula, ut consequat neque.</p>
-                    <a href="#" class="btn btn-primary">Read More</a>
-                </div>
+                <img src="https://images.pexels.com/photos/3617500/pexels-photo-3617500.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="card-img" alt="Article 3">
             </div>
         </div>
     </div>
 
     <div class="row mt-4">
-        <div class="col-12 text-center">
-            <h2>Sign up Today</h2>
-            <a href="#" class="btn btn-primary mx-2">Learn More</a>
-            <a href="#" class="btn btn-primary mx-2">Get Started</a>
-        </div>
+        
     </div>
     <br>
     <br>
 
 </div>
-<div class="crimson-section" style="background-color: #660708">
+<div class="contact-section" style="background-color: #E30B5D">
     <a name="contactsec"></a>
-    <div class="container" style="background-color: #660708">
+    <div class="container" style="background-color: #E30B5D">
         <br>
         <br>
         <br>
